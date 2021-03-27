@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+	<link rel="stylesheet" href="styles.css">
+		<link rel="icon" href="icon.png" type="image/jpg" sizes="16x16">
+    <title>Lynnette</title>
+</head>
+
+<body>
+
+	<div class="sidenav">
+		<center>
+		<img class="logo" src="scat.png">
+			<a href="index.html">Home</a>
+			<a href="page2.html">Hobbies</a>
+			<a href="page3.html">Gallery</a>
+			
+		</center>
+    </div>
+	
+	<div class="main">
+		<h1>Hobbies</h1>
+		  <p>Click on the tabs below to find out more about me!</p>
+		
+		
+		 <button class="accordion">Netball</button>
+		<div class="panel"><br>
+		<center><a href="https://www.netball.org.sg/"> <img src="netball.png" alt="NBSG" style="width:35px;height:35px;"></a></center>
+		 <h4> About Netball </h4>
+		 <p>Netball is a team sport comprising of 7 players on a netball court.
+		 Each player has their own playing position indicated with a bib and their own designated area of play. 
+		 The playing positions include the following; 
+		 Goal Shooter (GS), Goal Attacker (GA), Wing Attacker (WA), Center (C), 
+		 Wing Defence (WD), Goal Defence (GD) and Goal Keeper (GK). 
+		 A match comprises of 4 quarters of 10 minutes each, and teams attempt to score as many points as possible by the end of the gamme to win. 
+		 </p>
+		 <h4> My Netball Journey </h4>
+		 <p> I first started playing Netball when I joined it as a CCA when I entered secondary school.
+		 I wasn't that much of a sporty person back then, but I knew I wanted to try something new. This was one of my best decisions ever.
+		 Being part of a Netball team was really fun, because of the long hours spent training with my teammates.
+		 I fondly remember being under the hot sun with my teammates and going for our daily 2km runs.
+		 My main role in my team was the GK position, which was in the defense line. 
+		 The role required me to prevent the opposing team's GA or GS from scoring points. It was a pressuring role, but I did love it.
+		 Taking part in Netball competitions and carnivals were also another highlight of my secondary school life.
+		 Moving on, I sadly did not continue playing it during my polytechnic days. 
+		 However, I jumped at the chance to play it again casually when I eventually entered NTU. 
+		 Although I did not make the school team, at least I got to compete in Inter-Hall and Inter-School games every other year. 
+		 And this was good enough for me. </p>
+		</div>
+
+	<button class="accordion">Softball</button>
+		<div class="panel"><br>
+		<center><a href="https://www.sbsa.org.sg/"> <img src="softball.png" alt="SBSA" style="width:35px;height:35px;"></a></center>
+		  <h4>About Softball</h4>
+		  <p>Softball is a team sport comprising of 9 to 10 players on the field. 
+		  It is very similar to Baseball, but it differs on the pitching style - Baseball uses Overhand or Sidearm pitches whereas Softball uses an Underhand pitch. 
+		  There are two types of Softball Games - Fastpitch and Slowpitch. Both games are similar but vary slightly in some rules.
+		  The 9 main positions in a Softball Game - Pitcher, Catcher, 1st Base, 2nd Base, 3rd Base, 
+		  Shortstop, Left Fielder, Center Fielder and Right Fielder. At times, there can be a 10th position, a Rover.
+		 During an inning, the batting team plays until the fielding team is able to achieve 3 OUTS. 
+		 Teams aim to score as many runs as possible during the game. The team with the most runs in a game, wins the game.
+		  </p>
+		  
+		  <h4>My Softball Journey</h4>
+		  <p> I picked up Softball when I first came into NTU. I was introduced to the sport when I went for the try-outs at my hall event. 
+		  With no prior experience to this sport, it took me awhile to get used to the different skillsets and playing style,
+		  such as the game concept and simply getting used to catching a ball using a glove. 
+		  A few years on, it is now one of my favorite sports to play. 
+		  One of my favorite memories of the sport is competiting in the Inter-Hall Games with my hall and fighting through to get to the Semi-Finals.
+		  Another favorite memory was doing the Softball Module with my fellow PE classmates. It was very fun. 
+		  Taking it to the next level, I went to join my friend's team, NEXUS, and we got to compete on external competitions together.
+		  I hope that there would be more opportunities to play the sport once the COVID-19 measures wine down. 
+		  </p>  
+		  
+		</div>
+
+	<button class="accordion">Volleyball</button>
+		<div class="panel"><br>
+		<center><a href="https://www.vas.org.sg/"> <img src="volleyball.png" alt="VSA" style="width:35px;height:35px;"></a></center>
+		<h4> About Volleyball</h4>
+		<p>
+		Volleyball is a net-barrier team sport which comprises of 6 players on each side of the court - 3 in the front, 3 in the back.
+		The players positions mainly include a Setter, a Libero, Blockers, Spikers and Wing Spikers.
+		Players are not allowed to hold the ball but they use their hands, arms or any part of their body to keep the ball above the ground.
+		Teams can attempt to score a point by sending the ball over to the opposing court. 
+		A point is scored when their opponents are unable to return the ball back within 3 touches or if the ball touches the ground.
+		Matches are played best of five sets, and each set is played to 25 points. The team which wins best out of five sets wins the game.
+		
+		<h4> My Volleyball Journey </h4>
+		<p> I picked up Volleyball casually when I entered NTU. 
+		Although I have played it before in secondary school, I never really played it seriously.
+		Only after going through trainings with my hall and a Volleyball module, then I got to truly appreciate the mechanics of the game.
+		Unsurprisingly, it is now one of my favorite sports to play. 
+		I play it casually with my fellow NIE school mates whenever we are free. </p>
+		</div>
+		  
+	
+	</div>
+	</div>
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html>

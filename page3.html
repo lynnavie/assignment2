@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+	<link rel="stylesheet" href="styles.css">
+		<link rel="icon" href="icon.png" type="image/jpg" sizes="16x16">
+    <title>Lynnette</title>
+</head>
+
+<body>
+
+	<div class="sidenav">
+		<center>
+		<img class="logo" src="scat.png">
+			<a href="index.html">Home</a>
+			<a href="page2.html">Hobbies</a>
+			<a href="page3.html">Gallery</a>
+			
+		</center>
+    </div>
+	
+	<div class="main">
+		<h1>Gallery</h1>
+	
+	
+		  
+<center><h4>Softball Days</h4></center>
+<div class="slideshow-container">
+	  <div class="mySlides1">
+		<img src="softball1.jpg" style="width:100%">
+	  </div>
+
+	  <div class="mySlides1">
+		<img src="softball2.jpg" style="width:100%">
+	  </div>
+
+	  <div class="mySlides1">
+		<img src="softball3.jpg" style="width:100%">
+	  </div>
+	  
+	  <div class="mySlides1">
+		<img src="softball4.jpg" style="width:100%">
+	  </div>
+	  
+	  <div class="mySlides1">
+		<img src="softball5.jpg" style="width:100%">
+	  </div>
+	  
+	  <div class="mySlides1">
+		<img src="softball6.jpg" style="width:100%">
+	  </div>
+	  
+	  <div class="mySlides1">
+		<img src="softball7.jpg" style="width:100%">
+	  </div>
+	  
+	  <div class="mySlides1">
+		<img src="softball8.jpg" style="width:100%">
+	  </div>
+	  
+	  <div class="mySlides1">
+		<img src="softball9.jpg" style="width:100%">
+	  </div>
+	  
+	  <div class="mySlides1">
+		<img src="softball10.jpg" style="width:100%">
+	  </div>
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+
+<br>
+<center><h4>Netball Days</h4></center>
+<div class="slideshow-container">
+  
+	<div class="mySlides2">
+		<img src="netball1.jpg" style="width:100%">
+	  </div>
+
+	  <div class="mySlides2">
+		<img src="netball2.jpg" style="width:100%">
+	  </div>
+
+	  <div class="mySlides2">
+		<img src="netball3.jpg" style="width:100%">
+	  </div>
+	  
+	   <div class="mySlides2">
+		<img src="netball4.jpg" style="width:100%">
+	  </div>
+
+		<div class="mySlides2">
+		<img src="netball5.jpg" style="width:100%">
+	  </div>
+	  
+	  <div class="mySlides2">
+		<img src="netball6.jpg" style="width:100%">
+	  </div>
+	  
+	  <div class="mySlides2">
+		<img src="netball7.jpg" style="width:100%">
+	  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+</div>
+<br>
+	<center><h4>Volleyball Days</h4></center>
+<div class="slideshow-container">
+	  <div class="mySlides3">
+		<img src="vball1.jpg" style="width:100%">
+	  </div>
+
+</div>
+
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+
+var slideIndex = [1, 1,];
+var slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+
+
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+
+
+
+</script>
+</body>
+</html>
